@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base href="http://meme51.clementinelybliamay.fr">
+        <link rel="stylesheet" href="./assets/css/style.css"> 
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5c0927a59d70600011a13dd5&product=inline-share-buttons"></script>
+        <title>{% block title 'Meme 51' %}</title>
+    </head>
+    <body class="ff2">
+        {% include 'Layout/nav.html.twig' %}
+
+        <main class="d-flex flex-column w100 custom">
+            {% block content %}{% endblock %}
+        </main>
+
+        {% include 'Layout/footer.html.twig' %}
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

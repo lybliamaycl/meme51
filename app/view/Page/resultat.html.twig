@@ -1,0 +1,28 @@
+{% extends "Layout/layout.html.twig" %}
+
+{% block title %}
+    {{ parent() }} - Download
+{% endblock %}
+
+{% block content %}
+
+<div class="d-flex justify-center d-flex flex-row w100 custom">
+
+
+    <section class="w75 d-flex justify-center align-center pb20">
+ 
+        <img class="p20" src="./assets/upload/{{ meme.NAME }}" alt="">
+
+   </section>
+
+   <section class="w25 d-flex flex-column justify-center align-center bc3">
+      <div class="mb20 sharethis-inline-share-buttons"></div>
+      <div>
+          <a class="text-deco pt10 pb10 pr20 pl20 bc2 cl1" href="./assets/upload/{{ meme.NAME }}" download>Download</a>
+        <div>
+   </section>
+
+</div>
+
+
+{% endblock %}
